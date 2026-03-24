@@ -1,5 +1,12 @@
-{% extends "layout.html" %}
-
-{% block content %}
-<p>This is the content.</p>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <p>You are successfully logged in.</p>
+    <a href="/logout">Logout</a>
+</body>
+</html>
